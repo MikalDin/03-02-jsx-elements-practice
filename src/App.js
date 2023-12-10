@@ -1,32 +1,82 @@
 import React from 'react';
 
-function formatName(user) {
-  return `${user.firstName} ${user.lastName}`;
-}
-
-function App() {
-  const user = {
-    firstName: 'Mikal',
-    lastName: 'Din'
+function MyButton() {
+  const handleClick = () => {
+    console.log('button clicked');
   };
-
   
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1> Hello, {formatName(user)} </h1>
-        <div>
-          <h2>Part1</h2>
-          <h2>Part 2</h2>
-        </div>
-        <img src="https://media.istockphoto.com/id/1488113402/photo/the-power-of-search-engine-transforming-industries-and-customer-service-a-look-into-the.jpg?s=1024x1024&w=is&k=20&c=CX7V7Kgol-GTHlRVi6jB1Zn69-H-aTxQHNzVOGABaxU=" alt="cartoon-like rendering of micro chip "/>
-         </header>
-      </div>  
-    );
+    <button onClick={handleClick}>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      
+      <h1>Welcome to MIkal's app</h1>
+      <h2>Part1</h2>
+         <h3>Part 2</h3>
+         <div>
+         <MyButton />
+      </div>
+    <img src="https://media.istockphoto.com/id/1488113402/photo/the-power-of-search-engine-transforming-industries-and-customer-service-a-look-into-the.jpg?s=1024x1024&w=is&k=20&c=CX7V7Kgol-GTHlRVi6jB1Zn69-H-aTxQHNzVOGABaxU=" alt="cartoon-like rendering of micro chip "/>
+      
+    
+    </div>
+  );
 }
 
 
-export default App;
+
+
+// import React from 'react';
+
+// function formatName(user) {
+//   return `${user.firstName} ${user.lastName}`;
+// }
+
+// function App() {
+//   const user = {
+//     firstName: 'Mikal',
+//     lastName: 'Din'
+//   };
+
+  
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <h1> Hello, {formatName(user)} </h1>
+//         <div>
+//           <h2>Part1</h2>
+//           <h2>Part 2</h2>
+//         </div>
+//         <img src="https://media.istockphoto.com/id/1488113402/photo/the-power-of-search-engine-transforming-industries-and-customer-service-a-look-into-the.jpg?s=1024x1024&w=is&k=20&c=CX7V7Kgol-GTHlRVi6jB1Zn69-H-aTxQHNzVOGABaxU=" alt="cartoon-like rendering of micro chip "/>
+//          </header>
+//       </div>  
+//     );
+// }
+//  function MyButton() {
+//     return (
+//         <button>I'm a button </button>
+//     );
+
+//  }
+
+//  export default function MyApp() {
+//   return (
+//       <div>
+//         <h1> MIkal Din</h1>
+//         <MyButton />
+//         </div>
+
+//     );
+
+//  }
+
+// export default App;
 
 
 
